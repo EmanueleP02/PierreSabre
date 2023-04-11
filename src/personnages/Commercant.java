@@ -1,8 +1,8 @@
 package personnages;
 
-public class Commercant {
+public class Commercant extends Humain{
     public Commercant(String nom, int argent) {
-        this.;
+        super(nom,"thé",argent);
     }
 
     public int seFaireExtorquer() {

@@ -12,10 +12,15 @@ public class HistoireTP4 {
         System.out.println("(" + prof.getNom() + ") - J'ai " + prof.getArgent() + " sous en poche. Je vais pouvoir m'offrir un jeu à 2 sous");
         prof.acheter("jeu", 2);
         System.out.println("(" + prof.getNom() + ") - J'ai " + prof.getArgent() + " sous en poche. Je ne peux même pas m'offrir un kimono à 50 sous.");
-        Commercant marco = new Commercant("Marco", 40, 15)
-        Yakuza yaku_le_noir = new Yakuza("Yaku Le Noir", 25, 30, "Warsong")
-
-    
+        Commercant marco = new Commercant ("Marco", 40);
+        marco.direBonjour();
+        marco.seFaireExtorquer();
+        marco.recevoir(15);
+        marco.boire();
+        Yakuza yaku_le_noir = new Yakuza("Yaku le Noir", 30, "Warsong");
+        yaku_le_noir.direBonjour();
+        yaku_le_noir.parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par l� ?");
+        yaku_le_noir.Extorquer(marco);;
     }
 }
 
